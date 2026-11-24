@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Tomb Mask 100</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <div id="hud">
+    <div class="l">
+      <div class="row"><canvas class="ic" id="icCoin" width="10" height="10"></canvas><span id="coins">0</span></div>
+      <div class="row"><canvas class="ic" id="icDeath" width="10" height="9"></canvas><span id="deaths">0</span></div>
+      <div class="row"><span id="shieldCount">S:0</span><button id="shopBtn">TOKO</button></div>
+    </div>
+    <div class="c">
+      <div id="score">0</div>
+      <div id="mult">x1</div>
+      <div id="playerName">MASK</div>
+    </div>
+    <div class="r">
+      <div class="btns">
+        <button id="soundBtn" aria-label="Matikan suara">♪</button>
+        <button id="prev"><canvas class="ic" id="icPrev" width="4" height="7"></canvas></button>
+        <button id="rs"><canvas class="ic" id="icRs" width="8" height="8"></canvas></button>
+      </div>
+      <button id="lv"><canvas class="ic" id="icLv" width="12" height="10"></canvas><span id="lvt"></span></button>
+    </div>
+  </div>
+  <canvas id="c"></canvas>
+</div>
+
+<div id="welcome" class="ov">
+  <div class="box">
+    <div id="ovt">WELCOME!</div>
+    <div style="font-size:12px;margin:12px 0 18px">TOMB MASK 100</div>
+    <button id="startBtn">START</button>
+    <button id="welcomeLevels">SELECT LEVEL</button>
+  </div>
+</div>
+
+<div id="ov" class="ov">
+  <div class="box">
+    <div id="ovt"></div>
+    <button id="oRe">ULANG</button>
+    <button id="oMn">PILIH LEVEL</button>
+  </div>
+</div>
+
+<div id="menu" class="ov">
+  <div class="box">
+    <div>PILIH LEVEL</div>
+    <div id="grid"></div>
+    <div id="codebox">
+      <div>KODE LANJUT (simpan ya):</div>
+      <span id="mycode"></span>
+      <input id="codein" placeholder="tempel kode di sini" autocomplete="off">
+      <button id="codego">PAKAI KODE</button>
+      <div id="codemsg"></div>
+    </div>
+    <button id="mClose">TUTUP</button>
+  </div>
+</div>
+
+<div id="shop" class="ov">
+  <div class="box">
+    <div>TOKO</div>
+    <div id="shopBalance"></div>
+    <div id="nameBox">NAMA KARAKTER
+      <input id="nameInput" maxlength="16" placeholder="Nama karakter" autocomplete="off">
+      <button id="nameSave">SIMPAN NAMA</button>
+    </div>
+    <div id="shopItems"></div>
+    <div id="shopMsg"></div>
+    <button id="shopClose">TUTUP</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
